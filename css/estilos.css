@@ -444,3 +444,56 @@ body{
     padding: 10px;
 }
 /* CONTACTO PAGINA */
+
+.contenedorC{
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: 100px 80px 200px 400px 50px;
+    grid-template-areas: 
+    "header"
+    "titulo"
+    "main"
+    "info"
+    "footer";
+}
+.infoContacto1{
+    grid-area: main;
+    background-color: #b0a18f;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 15px;
+}
+.infoContacto1 p{
+    padding-top: 20px;
+    font-size: 20px;
+}
+.infoContacto1 ul{
+    font-size: 20px;
+    text-decoration: none;
+}
+.infoContacto1 ul li{
+    list-style-type: none;
+    padding: 10px;
+}
+.infoContacto2{
+    grid-area: info;
+    background-color: #cd8c52;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.infoContacto2 h3{
+    padding: 20px;
+    font-size: 30px;
+}
+.infoContacto2 div{
+    font-size: 20px;
+    padding: 20px;
+    text-align: center;
+}
+.footer{
+    grid-area: footer;
+}
