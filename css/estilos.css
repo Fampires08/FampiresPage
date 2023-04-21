@@ -118,9 +118,9 @@ body{
     font-size: 30px;
 }
 
-@media screen and (max-width: 450px){
+@media screen and (max-width: 425px){
     .contenedor{
-        grid-template-columns: 450fr;
+        grid-template-columns: 425px;
         grid-template-rows: 400px 80px 800px 1300px 300px 100px;
         grid-template-areas: 
         "header"
@@ -154,12 +154,12 @@ body{
         text-align: center;
     }
     .imgIndex2{
-        width: 200px;
+        width: 300px;
     }
     .contactoIndexP{
         background-color: #fbeed3;
         text-align: center;
-        padding: 20px;
+        padding: 10px;
     }
     .contactoIndexP p{
         padding: 15px;
@@ -167,7 +167,7 @@ body{
     .contactoIndex{
         flex-direction: column;
         text-align: center;
-        padding-bottom: 20px;
+        padding-bottom: 30px;
     }
     .footerIndex{
         flex-direction: column;
@@ -181,14 +181,13 @@ body{
 .contenedorS{
     display: grid;
     grid-template-columns: 1fr 1fr;
-    grid-template-rows: 100px 80px 500px 500px 150px 400px 50px;
+    grid-template-rows: 100px 80px 500px 500px 500px 50px;
     grid-template-areas: 
     "header header"
     "titulo titulo"
     "main main"
     "mapa mapa"
     "info info"
-    "img img"
     "footer footer";
 }
 .infoSobremi1{
@@ -236,70 +235,74 @@ body{
     font-size: 22px;
     padding-top: 20px;
 }
-.infoSobremi4{
+.infoSobremi3 img{
     grid-area: img;
     background-color: #cd8c52;
     display: flex;
     flex-direction: row;
     justify-content: space-evenly;
     padding: 20px;
-}
-.imgSobremi2{
     width: 500px;
-    padding: 20px;
-}
-.imgSobremi3{
-    width: 500px;
-    padding: 20px;
 }
 .footerSobremi{
     grid-area: footer;
 }
 
-@media screen and (max-width: 450px){
+@media screen and (max-width: 425px){
     .contenedorS{
-        grid-template-columns: 450px; 
-        grid-template-rows: 400px 80px 800px 1000px 200px 800px 100px;
+        grid-template-columns: 425px; 
+        grid-template-rows: 400px 80px 800px 1000px 1200px 100px;
         grid-template-areas: 
         "header"
         "titulo"
         "main"
         "mapa"
         "info"
-        "img"
         "footer";  
     }
     .header ul{
+        display: flex;
         flex-direction: column;
         text-align: center;
         padding: 20px;
         font-size: 25px;
     }
     .titulo{
+        display: flex;
         flex-direction: column;
         text-align: center;
         font-size: 25px;
     }
     .infoSobremi1{
+        display: flex;
         flex-wrap: wrap;
         text-align: center;
         font-weight: 200px;
     }
+    .infoSobremi1 img{
+        width: 250px;
+        padding: 10px;
+    }
     .infoSobremi2{
+        display: flex;
         flex-wrap: wrap;
         text-align: center;
         font-weight: 200px;
     }
     .infoSobremi3{
+        display: flex;
         flex-direction: column;
         justify-content: center;
+        align-items: center;
         font-weight: 200;
     }
-    .infoSobremi4{
-        flex-wrap: wrap;
+    .infoSobremi3{
         text-align: center;
+        padding: 20px;
+        width: 200px;
     }
     .footerSobremi{
+        display: flex;
         flex-direction: column;
         justify-content: center;
         padding: 10px;
