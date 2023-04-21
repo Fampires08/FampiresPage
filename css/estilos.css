@@ -118,10 +118,10 @@ body{
     font-size: 30px;
 }
 
-@media screen and (max-width: 426px){
+@media screen and (max-width: 450px){
     .contenedor{
-        grid-template-columns: 1000px;
-        grid-template-rows: 400px 80px 800px 1300px 300px 250px;
+        grid-template-columns: 450fr;
+        grid-template-rows: 400px 80px 800px 1300px 300px 100px;
         grid-template-areas: 
         "header"
         "titulo"
@@ -130,13 +130,13 @@ body{
         "contacto"
         "footer";
     }
-    .headerIndex ul{
+    .header ul{
         flex-direction: column;
         text-align: center;
         padding: 20px;
         font-size: 25px;
     }
-    .tituloIndex{
+    .titulo{
         flex-direction: column;
         text-align: center;
         font-size: 25px;
@@ -256,10 +256,10 @@ body{
     grid-area: footer;
 }
 
-@media screen and (max-width: 425px){
+@media screen and (max-width: 450px){
     .contenedorS{
-        grid-template-columns: 1fr; 
-        grid-template-rows: 400px 80px 800px 1000px 200px 800px 250px;
+        grid-template-columns: 450px; 
+        grid-template-rows: 400px 80px 800px 1000px 200px 800px 100px;
         grid-template-areas: 
         "header"
         "titulo"
@@ -269,13 +269,13 @@ body{
         "img"
         "footer";  
     }
-    .headerSobremi ul{
+    .header ul{
         flex-direction: column;
         text-align: center;
         padding: 20px;
         font-size: 25px;
     }
-    .tituloSobremi{
+    .titulo{
         flex-direction: column;
         text-align: center;
         font-size: 25px;
