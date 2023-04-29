@@ -1,0 +1,53 @@
+
+// GRILLAS DE INDEX
+.contenedor{
+    display: grid; 
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 100px 80px 500px 500px 50px;
+    grid-template-areas: 
+    "header header"
+    "titulo titulo"
+    "main main"
+    "info contacto"
+    "footer footer";
+}
+
+// GRILLAS SOBRE MI
+.contenedorS{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 100px 80px 500px 500px 500px 50px;
+    grid-template-areas: 
+    "header header"
+    "titulo titulo"
+    "main main"
+    "mapa mapa"
+    "info info"
+    "footer footer";
+}
+
+// GRILLAS PRODUCTOS
+.contenedorC{
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: 100px 80px 200px 400px 50px;
+    grid-template-areas: 
+    "header"
+    "titulo"
+    "main"
+    "info"
+    "footer";
+}
+
+// GRILLAS CONTACTO
+.contenedorC{
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: 100px 80px 200px 400px 50px;
+    grid-template-areas: 
+    "header"
+    "titulo"
+    "main"
+    "info"
+    "footer";
+}

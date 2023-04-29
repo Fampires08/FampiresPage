@@ -1,0 +1,119 @@
+
+// MEDIA QUERIES DEL INDEX
+@media screen and (max-width: 425px){
+    .contenedor{
+        grid-template-columns: 425px;
+        grid-template-rows: 400px 80px 800px 1300px 300px 100px;
+        grid-template-areas: 
+        "header"
+        "titulo"
+        "main"
+        "info"
+        "contacto"
+        "footer";
+    }
+    .header ul{
+        flex-direction: column;
+        text-align: center;
+        padding: 20px;
+        font-size: 25px;
+    }
+    .titulo{
+        flex-direction: column;
+        text-align: center;
+        font-size: 25px;
+    }
+    .infoIndex1{
+        flex-wrap: wrap;
+        text-align: center;
+        font-weight: 200;
+        img{
+            width: 300px;
+        }
+    }
+    .infoIndex2{
+        flex-wrap: wrap;
+        text-align: center;
+        img{
+            width: 300px;
+        }
+    }
+    .contactoIndexP{
+        background-color: #fbeed3;
+        text-align: center;
+        padding: 10px;
+        p{
+            padding: 15px;  
+        }
+    }
+    .contactoIndex{
+        flex-direction: column;
+        text-align: center;
+        padding-bottom: 30px;
+    }
+    .footerIndex{
+        flex-direction: column;
+        justify-content: center;
+        padding: 10px;
+    }
+}
+
+// MEDIA QUERIES DE SOBRE MI
+@media screen and (max-width: 425px){
+    .contenedorS{
+        grid-template-columns: 425px; 
+        grid-template-rows: 400px 80px 800px 1000px 1200px 100px;
+        grid-template-areas: 
+        "header"
+        "titulo"
+        "main"
+        "mapa"
+        "info"
+        "footer";  
+    }
+    .header ul{
+        display: flex;
+        flex-direction: column;
+        text-align: center;
+        padding: 20px;
+        font-size: 25px;
+    }
+    .titulo{
+        display: flex;
+        flex-direction: column;
+        text-align: center;
+        font-size: 25px;
+    }
+    .infoSobremi1{
+        display: flex;
+        flex-wrap: wrap;
+        text-align: center;
+        font-weight: 200px;
+        img{
+            width: 250px;
+            padding: 10px;
+        }
+    }
+    .infoSobremi2{
+        display: flex;
+        flex-wrap: wrap;
+        text-align: center;
+        font-weight: 200px;
+    }
+    .infoSobremi3{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        font-weight: 200;
+        text-align: center;
+        padding: 20px;
+        width: 200px;
+    }
+    .footerSobremi{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        padding: 10px;
+    }
+}

@@ -4,29 +4,27 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-KK94CHFLLe+nY2dmCWGMq91rCGa5gtU4mk92HdvYe+M/SXH301p5ILy+dN9+nJOZ" crossorigin="anonymous">
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ENjdO4Dr2bkBIFxQpeoTz1HIcje39Wm4jDKdf19U8gI4ddQ3GYNS7NTKfAdVQSZe" crossorigin="anonymous"></script>
     <link rel="stylesheet" href="../css/estilos.css">
     <link rel="shortcut icon" href="../imagenes/imgPag/favicon.png" type="image/x-icon">
     <title>Fampires08</title>
 </head>
 <body>
-    <div class="container-fluid">
+    <div class="contenedorG">
         
-        <header class="header row">
+        <header class="header">
             <ul>
                 <li><a href="../index.html">INICIO</a></li>
                 <li><a href="sobremi.html">SOBRE MI</a></li>
                 <li><a href="productos.html">PRODUCTOS</a></li>
                 <li><a href="contacto.html">CONTACTO</a></li>
             </ul>
-
-            <nav class="titulo col-12">
-                <h1>Mi fotografia</h1>
-            </nav>
         </header>
 
-        <main class="infoGaleria1 row">
+        <nav class="titulo">
+            <h1>Mi fotografia</h1>
+        </nav>
+
+        <main class="infoGaleria1">
             <p>En esta seccion mostrare las diferentes fotos que saque, en mis viajes,
                 a animales en especial a perritos y tambien a muchos amigos, he viajado
                 por varios luagres, he ido a Cordoba, Sierra de la Ventana, Bariloche,
@@ -40,7 +38,7 @@
         </main>
 
         <section>
-            <article class="infoGaleria2 row">
+            <article class="infoGaleria2">
                 <div>
                     <h1 id="viajes">VIAJES</h1>
                     <p>En esta seccion mostrare los viajes que realize, entre ellos Carlos
@@ -50,276 +48,8 @@
                 </div>
             </article>
         </section>
-        <section class="carouselIMG row">
-            <div class="col-6">
-                <article class="imgGaleria1">
-                    <div id="carousel1" class="carousel slide">
-                        <div class="carousel-indicators">
-                            <button type="button" data-bs-target="#carousel1" data-bs-slide-to="0" class="active" aria-current="true"
-                                aria-label="Slide 1"></button>
-                            <button type="button" data-bs-target="#carousel1" data-bs-slide-to="1" aria-label="Slide 2"></button>
-                            <button type="button" data-bs-target="#carousel1" data-bs-slide-to="2" aria-label="Slide 3"></button>
-                        </div>
-                        <div class="carousel-inner">
-                            <div class="carousel-item active">
-                                <img src="../imagenes/Viajes/sierra.JPG" class="d-block w-100" alt="sierra">
-                                <div class="carousel-caption d-none d-md-block">
-                                    <h5>Sierra de la Ventana</h5>
-                                    <p>Fotografia tomada al cerro ventana en el atardecer</p>
-                                </div>
-                            </div>
-                            <div class="carousel-item">
-                                <img src="../imagenes/Viajes/bariloche.JPG" class="d-block w-100" alt="bariloche">
-                                <div class="carousel-caption d-none d-md-block">
-                                    <h5>Bariloche</h5>
-                                    <p>Fotografia al lago nahuel huapi</p>
-                                </div>
-                            </div>
-                            <div class="carousel-item">
-                                <img src="../imagenes/Viajes/cordoba.JPG" class="d-block w-100" alt="cordoba">
-                                <div class="carousel-caption d-none d-md-block">
-                                    <h5>Villa Carlos Paz</h5>
-                                    <p>Fotografia tomada en el lago San Roque</p>
-                                </div>
-                            </div>
-                        </div>
-                        <button class="carousel-control-prev" type="button" data-bs-target="#carousel1" data-bs-slide="prev">
-                            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-                            <span class="visually-hidden">Previous</span>
-                        </button>
-                        <button class="carousel-control-next" type="button" data-bs-target="#carousel1" data-bs-slide="next">
-                            <span class="carousel-control-next-icon" aria-hidden="true"></span>
-                            <span class="visually-hidden">Next</span>
-                        </button>
-                    </div>
-                </article>
-            </div>
-            <div class="col-6">
-                <article class="imgGaleria2">
-                    <div id="carousel2" class="carousel slide">
-                        <div class="carousel-indicators">
-                            <button type="button" data-bs-target="#carousel2" data-bs-slide-to="0" class="active" aria-current="true"
-                                aria-label="Slide 1"></button>
-                            <button type="button" data-bs-target="#carousel2" data-bs-slide-to="1" aria-label="Slide 2"></button>
-                            <button type="button" data-bs-target="#carousel2" data-bs-slide-to="2" aria-label="Slide 3"></button>
-                        </div>
-                        <div class="carousel-inner">
-                            <div class="carousel-item active">
-                                <img src="../imagenes/Viajes/crucero1.JPG" class="d-block w-100" alt="crucero">
-                                <div class="carousel-caption d-none d-md-block">
-                                    <h5>Crucero MSC Musica</h5>
-                                    <p>Playas de Ihla Bella</p>
-                                </div>
-                            </div>
-                            <div class="carousel-item">
-                                <img src="../imagenes/Viajes/sierra1.JPG" class="d-block w-100" alt="sierra">
-                                <div class="carousel-caption d-none d-md-block">
-                                    <h5>Sierra de la Ventan</h5>
-                                    <p>Foto tomada desde el cerro ventana, de fondo Tornquist</p>
-                                </div>
-                            </div>
-                            <div class="carousel-item">
-                                <img src="../imagenes/Viajes/bariloche2.jpg" class="d-block w-100" alt="...">
-                                <div class="carousel-caption d-none d-md-block">
-                                    <h5>Third slide label</h5>
-                                    <p>Some representative placeholder content for the third slide.</p>
-                                </div>
-                            </div>
-                        </div>
-                        <button class="carousel-control-prev" type="button" data-bs-target="#carousel2" data-bs-slide="prev">
-                            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-                            <span class="visually-hidden">Previous</span>
-                        </button>
-                        <button class="carousel-control-next" type="button" data-bs-target="#carousel2" data-bs-slide="next">
-                            <span class="carousel-control-next-icon" aria-hidden="true"></span>
-                            <span class="visually-hidden">Next</span>
-                        </button>
-                    </div>
-                </article>
-             </div>
-        </section>
-        <section>
-            <article class="infoGaleria2 row">
-                <div>
-                    <h1 id="animales">ANIMALES</h1>
-                    <p>En este apartado como veran soy amante de los perritos, me gusta fotografiarlos, transmiten mucha alegria y felicidad</p>
-                </div>
-            </article>
-        </section>
-        <section class="carouselIMG row">
-            <div class="col-6">
-                <article class="imgGaleria3">
-                    <div id="carousel3" class="carousel slide">
-                        <div class="carousel-indicators">
-                            <button type="button" data-bs-target="#carousel3" data-bs-slide-to="0" class="active" aria-current="true"
-                                aria-label="Slide 1"></button>
-                            <button type="button" data-bs-target="#carousel3" data-bs-slide-to="1" aria-label="Slide 2"></button>
-                            <button type="button" data-bs-target="#carousel3" data-bs-slide-to="2" aria-label="Slide 3"></button>
-                        </div>
-                        <div class="carousel-inner">
-                            <div class="carousel-item active">
-                                <img src="../imagenes/Animales/20220606125513_IMG_2666.JPG" class="d-block w-100" alt="animales">
-                              
-                            </div>
-                            <div class="carousel-item">
-                                <img src="../imagenes/Animales/20221023182250_IMG_3044.JPG" class="d-block w-100" alt="animales">
-                                <div class="carousel-caption d-none d-md-block">
-                                    <h5>Second slide label</h5>
-                                    <p>Some representative placeholder content for the second slide.</p>
-                                </div>
-                            </div>
-                            <div class="carousel-item">
-                                <img src="../imagenes/Animales/20220120090528_IMG_0791.JPG" class="d-block w-100" alt="animales">
-                                <div class="carousel-caption d-none d-md-block">
-                                    <h5>Third slide label</h5>
-                                    <p>Some representative placeholder content for the third slide.</p>
-                                </div>
-                            </div>
-                        </div>
-                        <button class="carousel-control-prev" type="button" data-bs-target="#carousel3" data-bs-slide="prev">
-                            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-                            <span class="visually-hidden">Previous</span>
-                        </button>
-                        <button class="carousel-control-next" type="button" data-bs-target="#carousel3" data-bs-slide="next">
-                            <span class="carousel-control-next-icon" aria-hidden="true"></span>
-                            <span class="visually-hidden">Next</span>
-                        </button>
-                    </div>
-                </article>
-            </div>
-            <div class="col-6">
-                <article class="imgGaleria4">
-                    <div id="carousel4" class="carousel slide">
-                        <div class="carousel-indicators">
-                            <button type="button" data-bs-target="#carousel4" data-bs-slide-to="0" class="active" aria-current="true"
-                                aria-label="Slide 1"></button>
-                            <button type="button" data-bs-target="#carousel4" data-bs-slide-to="1" aria-label="Slide 2"></button>
-                            <button type="button" data-bs-target="#carousel4" data-bs-slide-to="2" aria-label="Slide 3"></button>
-                        </div>
-                        <div class="carousel-inner">
-                            <div class="carousel-item active">
-                                <img src="../imagenes/Animales/20230402171422_IMG_3996.JPG" class="d-block w-100" alt="animales">
-                              
-                            </div>
-                            <div class="carousel-item">
-                                <img src="../imagenes/Animales/20230319154635_IMG_3892.JPG" class="d-block w-100" alt="animales">
-                                <div class="carousel-caption d-none d-md-block">
-                                    <h5>Second slide label</h5>
-                                    <p>Some representative placeholder content for the second slide.</p>
-                                </div>
-                            </div>
-                            <div class="carousel-item">
-                                <img src="../imagenes/Animales/20230127163325_IMG_3774.JPG" class="d-block w-100" alt="animales">
-                                <div class="carousel-caption d-none d-md-block">
-                                    <h5>Third slide label</h5>
-                                    <p>Some representative placeholder content for the third slide.</p>
-                                </div>
-                            </div>
-                        </div>
-                        <button class="carousel-control-prev" type="button" data-bs-target="#carousel4" data-bs-slide="prev">
-                            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-                            <span class="visually-hidden">Previous</span>
-                        </button>
-                        <button class="carousel-control-next" type="button" data-bs-target="#carousel4" data-bs-slide="next">
-                            <span class="carousel-control-next-icon" aria-hidden="true"></span>
-                            <span class="visually-hidden">Next</span>
-                        </button>
-                    </div>
-                </article>
-            </div>
-        </section>
-        <section>
-            <article class="infoGaleria2 row">
-                <div>
-                    <h1 id="amigos">AMIGOS</h1>
-                    <p>En este apartado fotografie a mis amigos que me apoyaron y me permitieron sacarles fotos para mi emprendimiento</p>
-                </div>
-            </article>
-        </section>
-        <section class="carouselIMG row">
-            <div class="col-6">
-                <article class="imgGaleria5">
-                    <div id="carousel5" class="carousel slide">
-                        <div class="carousel-indicators">
-                            <button type="button" data-bs-target="#carousel5" data-bs-slide-to="0" class="active" aria-current="true"
-                                aria-label="Slide 1"></button>
-                            <button type="button" data-bs-target="#carousel5" data-bs-slide-to="1" aria-label="Slide 2"></button>
-                            <button type="button" data-bs-target="#carousel5" data-bs-slide-to="2" aria-label="Slide 3"></button>
-                        </div>
-                        <div class="carousel-inner">
-                            <div class="carousel-item active">
-                                <img src="../imagenes/Amigos/20220209163849_IMG_1887.JPG" class="d-block w-100" alt="Amigos">
-                              
-                            </div>
-                            <div class="carousel-item">
-                                <img src="../imagenes/Amigos/20220314184003_IMG_2148.JPG" class="d-block w-100" alt="Amigos">
-                                <div class="carousel-caption d-none d-md-block">
-                                    <h5>Second slide label</h5>
-                                    <p>Some representative placeholder content for the second slide.</p>
-                                </div>
-                            </div>
-                            <div class="carousel-item">
-                                <img src="../imagenes/Amigos/20220414173502_IMG_2381.JPG" class="d-block w-100" alt="Amigos">
-                                <div class="carousel-caption d-none d-md-block">
-                                    <h5>Third slide label</h5>
-                                    <p>Some representative placeholder content for the third slide.</p>
-                                </div>
-                            </div>
-                        </div>
-                        <button class="carousel-control-prev" type="button" data-bs-target="#carousel5" data-bs-slide="prev">
-                            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-                            <span class="visually-hidden">Previous</span>
-                        </button>
-                        <button class="carousel-control-next" type="button" data-bs-target="#carousel5" data-bs-slide="next">
-                            <span class="carousel-control-next-icon" aria-hidden="true"></span>
-                            <span class="visually-hidden">Next</span>
-                        </button>
-                    </div>
-                </article>
-            </div>
-            <div class="col-6">
-                <article class="imgGaleria6">
-                    <div id="carousel6" class="carousel slide">
-                        <div class="carousel-indicators">
-                            <button type="button" data-bs-target="#carousel6" data-bs-slide-to="0" class="active" aria-current="true"
-                                aria-label="Slide 1"></button>
-                            <button type="button" data-bs-target="#carousel6" data-bs-slide-to="1" aria-label="Slide 2"></button>
-                            <button type="button" data-bs-target="#carousel6" data-bs-slide-to="2" aria-label="Slide 3"></button>
-                        </div>
-                        <div class="carousel-inner">
-                            <div class="carousel-item active">
-                                <img src="../imagenes/Amigos/20221228181623_IMG_3459.JPG" class="d-block w-100" alt="Amigos">
-                              
-                            </div>
-                            <div class="carousel-item">
-                                <img src="../imagenes/Amigos/20230330165427_IMG_3965.JPG" class="d-block w-100" alt="Amigos">
-                                <div class="carousel-caption d-none d-md-block">
-                                    <h5>Second slide label</h5>
-                                    <p>Some representative placeholder content for the second slide.</p>
-                                </div>
-                            </div>
-                            <div class="carousel-item">
-                                <img src="../imagenes/Amigos/20230402170443_IMG_3987.JPG" class="d-block w-100" alt="Amigos">
-                                <div class="carousel-caption d-none d-md-block">
-                                    <h5>Third slide label</h5>
-                                    <p>Some representative placeholder content for the third slide.</p>
-                                </div>
-                            </div>
-                        </div>
-                        <button class="carousel-control-prev" type="button" data-bs-target="#carousel6" data-bs-slide="prev">
-                            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-                            <span class="visually-hidden">Previous</span>
-                        </button>
-                        <button class="carousel-control-next" type="button" data-bs-target="#carousel6" data-bs-slide="next">
-                            <span class="carousel-control-next-icon" aria-hidden="true"></span>
-                            <span class="visually-hidden">Next</span>
-                        </button>
-                    </div>
-                </article>
-            </div>
-        </section>
         
-        <footer class="footer row">
+        <footer class="footer">
             <p>
                 <a href="https://www.instagram.com/fampires08/">Instagram</a>
                 <a href="https://www.facebook.com/franco.intrieri08/">Facebook</a>
