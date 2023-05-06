@@ -3,7 +3,7 @@
 @media screen and (max-width: 425px){
     .contenedor{
         grid-template-columns: 425px;
-        grid-template-rows: 400px 80px 800px 1300px 300px 100px;
+        grid-template-rows: 400px 80px 800px 1300px 300px 250px;
         grid-template-areas: 
         "header"
         "titulo"
@@ -51,7 +51,8 @@
         text-align: center;
         padding-bottom: 30px;
     }
-    .footerIndex{
+    .footer{
+        display: flex;
         flex-direction: column;
         justify-content: center;
         padding: 10px;
@@ -62,7 +63,7 @@
 @media screen and (max-width: 425px){
     .contenedorS{
         grid-template-columns: 425px; 
-        grid-template-rows: 400px 80px 800px 1000px 1200px 100px;
+        grid-template-rows: 400px 80px 800px 1000px 1200px 250px;
         grid-template-areas: 
         "header"
         "titulo"
@@ -110,7 +111,149 @@
         padding: 20px;
         width: 200px;
     }
-    .footerSobremi{
+    .footer{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        padding: 10px;
+    }
+}
+
+// MEDIA QUERIES PRODUCTOS
+@media screen and (max-width: 425px) {
+    .contenedorP{
+        grid-template-columns: 425px;
+        grid-template-rows: 400px 80px 1100px 600px 250px;
+        grid-template-areas: 
+        "header"
+        "titulo"
+        "main"
+        "info"
+        "footer";
+    }
+    .header ul{
+        display: flex;
+        flex-direction: column;
+        text-align: center;
+        padding: 20px;
+        font-size: 25px;
+    }
+    .titulo{
+        display: flex;
+        flex-direction: column;
+        text-align: center;
+        font-size: 25px;
+    }
+    .infoProductos1{
+        display: flex;
+        flex-wrap: wrap;
+        text-align: center;
+        font-weight: 200px;
+    }
+    .infoProductos2{
+        display: flex;
+        flex-wrap: wrap;
+        text-align: center;
+        font-weight: 200px;
+    }
+    .footer{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        padding: 10px;
+    }
+}
+// MEDIA QUERIES GALERIA
+@media screen and (max-width: 425px) {
+    .contenedorG{
+        grid-template-columns: 425px;
+        grid-template-rows: 400px 80px 400px 1700px 1300px 1700px 250px;
+        grid-template-areas: 
+        "header"
+        "titulo"
+        "main"
+        "info1"
+        "info2"
+        "info3"
+        "footer";
+    }
+    .header ul{
+        display: flex;
+        flex-direction: column;
+        text-align: center;
+        padding: 20px;
+        font-size: 25px;
+    }
+    .titulo{
+        display: flex;
+        flex-direction: column;
+        text-align: center;
+        font-size: 25px;
+    }
+    .infoGaleria1{
+        display: flex;
+        flex-wrap: wrap;
+        text-align: center;
+        font-weight: 200px;
+    }
+    .infoGaleria2{
+        display: flex;
+        flex-direction: column;
+        text-align: center;
+        font-weight: 200px;
+    }
+    .infoGaleria3{
+        display: flex;
+        flex-direction: column;
+        text-align: center;
+        font-weight: 200px;
+    }
+    .infoGaleria4{
+        display: flex;
+        flex-direction: column;
+        text-align: center;
+        font-weight: 200px;
+    }
+}
+
+// MEDIA QUERIES CONTACTO
+@media screen and (max-width: 425px) {
+    .contenedorC{
+        grid-template-columns: 425px;
+        grid-template-rows: 400px 80px 400px 500px 250px;
+        grid-template-areas: 
+        "header"
+        "titulo"
+        "main"
+        "info"
+        "footer";
+    }
+    .header ul{
+        display: flex;
+        flex-direction: column;
+        text-align: center;
+        padding: 20px;
+        font-size: 25px;
+    }
+    .titulo{
+        display: flex;
+        flex-direction: column;
+        text-align: center;
+        font-size: 25px;
+    }
+    .infoContacto1{
+        display: flex;
+        flex-wrap: wrap;
+        text-align: center;
+        font-weight: 200px;
+    }
+    .infoContacto2{
+        display: flex;
+        flex-wrap: wrap;
+        text-align: center;
+        font-weight: 200px;
+    }
+    .footer{
         display: flex;
         flex-direction: column;
         justify-content: center;

@@ -96,6 +96,12 @@
 }
 
 // INFORMACION PRODUCTOS
+.header{
+    grid-area: header;
+}
+.titulo{
+    grid-area: titulo;
+}
 .infoProductos1{
     grid-area: main;
     background-color: #b0a18f;
@@ -106,8 +112,8 @@
     padding: 30px;
     p{
         text-align: center;
-        font-size: 20px;
-        padding: 15px;  
+        font-size: 25px;
+        padding: 20px;  
     }
     iframe{
         width: 900px;
@@ -126,12 +132,12 @@
     div{
         p{
             text-align: center;
-            font-size: 20px;
+            font-size: 25px;
             padding: 20px;  
         }
         ul{
             text-align: center;
-            font-size: 20px;
+            font-size: 25px;
             padding: 20px;
         }
         li{
@@ -155,7 +161,7 @@
     flex-wrap: wrap;
     justify-content: center;
     p{
-        font-size: 25px;
+        font-size: 20px;
         padding: 15px;
         text-align: center;
     }
@@ -172,6 +178,214 @@
                     color: brown;
                 }
             }
+        }
+    }
+}
+.infoGaleria2{
+    background-color: #cd8c52;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    h1 {
+        text-align: center;
+        padding: 10px;
+        font-size: 20px;
+    }
+    p {
+        text-align: center;
+        padding: 10px;
+        font-size: 20px;
+    }
+    div{
+        .imagen1{
+            grid-area: imagen1;
+            background-image: url(../imagenes/Viajes/img1.jpg);
+            background-position: center;
+            margin: 5px;
+        }
+        .imagen2{
+            grid-area: imagen2;
+            background-image: url(../imagenes/Viajes/img2.jpg);
+            background-position: center;
+            margin: 5px; 
+        }
+        .imagen3{
+            grid-area: imagen3;
+            background-image: url(../imagenes/Viajes/img3.JPG);
+            background-position: center;
+            margin: 5px;
+        }
+        .imagen4{
+            grid-area: imagen4;
+            background-image: url(../imagenes/Viajes/img4.JPG);
+            background-position: center;
+            margin: 5px;
+        }
+        .imagen5{
+            grid-area: imagen5;
+            background-image: url(../imagenes/Viajes/img5.jpg);
+            background-position: center;
+            margin: 5px;
+        }
+        .imagen6{
+            grid-area: imagen6;
+            background-image: url(../imagenes/Viajes/img6.jpg);
+            background-position: center;
+            margin: 5px;
+        }
+        .imagen7{
+            grid-area: imagen7;
+            background-image: url(../imagenes/Viajes/img7.jpg);
+            background-position: center;
+            position: contain;
+            margin: 5px;
+        }
+        .imagen8{
+            grid-area: imagen8;
+            background-image: url(../imagenes/Viajes/img8.jpg);
+            background-position: center;
+            margin: 5px;
+        }
+    }
+}
+.infoGaleria3{
+    background-color: #cd8c52;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    h1 {
+        text-align: center;
+        padding: 10px;
+        font-size: 20px;
+    }
+    p {
+        text-align: center;
+        padding: 10px;
+        font-size: 20px;
+    }
+    div{
+        .imagen1{
+            grid-area: imagen1;
+            background-image: url(../imagenes/Animales/img1.JPG);
+            background-position: center;
+            background-size: cover;
+            margin: 5px;
+        }
+        .imagen2{
+            grid-area: imagen2;
+            background-image: url(../imagenes/Animales/img2.JPG);
+            background-position: center;
+            background-size: cover;
+            margin: 5px;
+        }
+        .imagen3{
+            grid-area: imagen3;
+            background-image: url(../imagenes/Animales/img3.JPG);
+            background-position: center;
+            background-size: cover;
+            margin: 5px;
+        }
+        .imagen4{
+            grid-area: imagen4;
+            background-image: url(../imagenes/Animales/img4.JPG);
+            background-position: center;
+            background-size: cover;
+            margin: 5px;
+        }
+        .imagen5{
+            grid-area: imagen5;
+            background-image: url(../imagenes/Animales/img5.JPG);
+            background-position: center;
+            background-size: cover;
+            margin: 5px;
+        }
+        .imagen6{
+            grid-area: imagen6;
+            background-image: url(../imagenes/Animales/img6.JPG);
+            background-position: center;
+            background-size: cover;
+            margin: 5px;
+        }
+    }
+}
+.infoGaleria4{
+    background-color: #cd8c52;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    h1 {
+        text-align: center;
+        padding: 10px;
+        font-size: 20px;
+    }
+    p {
+        text-align: center;
+        padding: 10px;
+        font-size: 20px;
+    }
+    div{
+        .imagen1{
+            grid-area: imagen1;
+            background-image: url(../imagenes/Amigos/img1.JPG);
+            background-position: center;
+            background-size: cover;
+            margin: 5px;
+        }
+        .imagen2{
+            grid-area: imagen2;
+            background-image: url(../imagenes/Amigos/img2.JPG);
+            background-position: center;
+            background-size: cover;
+            margin: 5px;
+        }
+        .imagen3{
+            grid-area: imagen3;
+            background-image: url(../imagenes/Amigos/img3.JPG);
+            background-position: center;
+            background-size: cover;
+            margin: 5px;
+        }
+        .imagen4{
+            grid-area: imagen4;
+            background-image: url(../imagenes/Amigos/img4.JPG);
+            background-position: center;
+            background-size: cover;
+            margin: 5px;
+        }
+        .imagen5{
+            grid-area: imagen5;
+            background-image: url(../imagenes/Amigos/img5.JPG);
+            background-position: center;
+            background-size: cover;
+            margin: 5px;
+        }
+        .imagen6{
+            grid-area: imagen6;
+            background-image: url(../imagenes/Amigos/img6.JPG);
+            background-position: center;
+            background-size: cover;
+            margin: 5px;
+        }
+        .imagen7{
+            grid-area: imagen7;
+            background-image: url(../imagenes/Amigos/img7.JPG);
+            background-position: center;
+            background-size: cover;
+            margin: 5px;
+        }
+        .imagen8{
+            grid-area: imagen8;
+            background-image: url(../imagenes/Amigos/img8.JPG);
+            background-position: center;
+            background-size: cover;
+            margin: 5px;
+        }
+        .imagen9{
+            grid-area: imagen9;
+            background-image: url(../imagenes/Amigos/img9.JPG);
+            background-position: center;
+            background-size: cover;
+            margin: 5px;
         }
     }
 }
@@ -213,5 +427,5 @@
         font-size: 20px;
         padding: 20px;
         text-align: center;
-    }
+}
 }

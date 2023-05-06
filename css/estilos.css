@@ -12,17 +12,51 @@
   grid-template-areas: "header header" "titulo titulo" "main main" "mapa mapa" "info info" "footer footer";
 }
 
-.contenedorC {
+.contenedorP {
   display: grid;
   grid-template-columns: 1fr;
-  grid-template-rows: 100px 80px 200px 400px 50px;
+  grid-template-rows: 100px 80px 400px 400px 100px;
   grid-template-areas: "header" "titulo" "main" "info" "footer";
+}
+
+.contenedorG {
+  display: grid;
+  grid-template-columns: 1900px;
+  grid-template-rows: 100px 80px 180px 1700px 1300px 1700px 50px;
+  grid-template-areas: "header" "titulo" "main" "info1" "info2" "info3" "footer";
+}
+
+.imgGaleria1 {
+  display: grid;
+  grid-template-columns: repeat(4, 400px);
+  grid-template-rows: repeat(4, 400px);
+  grid-template-areas: "imagen1 imagen1 imagen2 imagen3" "imagen4 imagen5 imagen5 imagen3" "imagen4 imagen6 imagen7 imagen3" "imagen4 imagen8 imagen8 imagen8";
+  justify-content: center;
+  padding: 10px;
+}
+
+.imgGaleria2 {
+  display: grid;
+  grid-template-columns: repeat(4, 400px);
+  grid-template-rows: repeat(3, 400px);
+  grid-template-areas: "imagen1 imagen1 imagen2 imagen3" "imagen4 imagen5 imagen6 imagen3" "imagen4 imagen5 imagen6 imagen3";
+  justify-content: center;
+  padding: 10px;
+}
+
+.imgGaleria3 {
+  display: grid;
+  grid-template-columns: repeat(4, 400px);
+  grid-template-rows: repeat(4, 400px);
+  grid-template-areas: "imagen2 imagen9 imagen5 imagen4" "imagen6 imagen8 imagen8 imagen4" "imagen1 imagen3 imagen3 imagen4" "imagen1 imagen7 imagen7 imagen7";
+  justify-content: center;
+  padding: 10px;
 }
 
 .contenedorC {
   display: grid;
   grid-template-columns: 1fr;
-  grid-template-rows: 100px 80px 200px 400px 50px;
+  grid-template-rows: 100px 80px 200px 400px 100px;
   grid-template-areas: "header" "titulo" "main" "info" "footer";
 }
 
@@ -74,6 +108,7 @@ body {
   grid-area: footer;
   background-color: #7d1a0c;
   display: flex;
+  flex-direction: row;
   justify-content: space-evenly;
   align-items: center;
 }
@@ -182,6 +217,14 @@ body {
   width: 500px;
 }
 
+.header {
+  grid-area: header;
+}
+
+.titulo {
+  grid-area: titulo;
+}
+
 .infoProductos1 {
   grid-area: main;
   background-color: #b0a18f;
@@ -193,8 +236,8 @@ body {
 }
 .infoProductos1 p {
   text-align: center;
-  font-size: 20px;
-  padding: 15px;
+  font-size: 25px;
+  padding: 20px;
 }
 .infoProductos1 iframe {
   width: 900px;
@@ -213,12 +256,12 @@ body {
 }
 .infoProductos2 div p {
   text-align: center;
-  font-size: 20px;
+  font-size: 25px;
   padding: 20px;
 }
 .infoProductos2 div ul {
   text-align: center;
-  font-size: 20px;
+  font-size: 25px;
   padding: 20px;
 }
 .infoProductos2 div li {
@@ -230,6 +273,238 @@ body {
   width: 400px;
   height: 300px;
   padding: 15px;
+}
+
+.infoGaleria1 {
+  background-color: #b0a18f;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+.infoGaleria1 p {
+  font-size: 20px;
+  padding: 15px;
+  text-align: center;
+}
+.infoGaleria1 ul {
+  padding: 15px;
+  font-size: 20px;
+  text-align: center;
+}
+.infoGaleria1 ul li {
+  list-style-type: none;
+}
+.infoGaleria1 ul li a {
+  text-decoration: none;
+  color: black;
+}
+.infoGaleria1 ul li a:hover {
+  color: brown;
+}
+
+.infoGaleria2 {
+  background-color: #cd8c52;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+.infoGaleria2 h1 {
+  text-align: center;
+  padding: 10px;
+  font-size: 20px;
+}
+.infoGaleria2 p {
+  text-align: center;
+  padding: 10px;
+  font-size: 20px;
+}
+.infoGaleria2 div .imagen1 {
+  grid-area: imagen1;
+  background-image: url(../imagenes/Viajes/img1.jpg);
+  background-position: center;
+  margin: 5px;
+}
+.infoGaleria2 div .imagen2 {
+  grid-area: imagen2;
+  background-image: url(../imagenes/Viajes/img2.jpg);
+  background-position: center;
+  margin: 5px;
+}
+.infoGaleria2 div .imagen3 {
+  grid-area: imagen3;
+  background-image: url(../imagenes/Viajes/img3.JPG);
+  background-position: center;
+  margin: 5px;
+}
+.infoGaleria2 div .imagen4 {
+  grid-area: imagen4;
+  background-image: url(../imagenes/Viajes/img4.JPG);
+  background-position: center;
+  margin: 5px;
+}
+.infoGaleria2 div .imagen5 {
+  grid-area: imagen5;
+  background-image: url(../imagenes/Viajes/img5.jpg);
+  background-position: center;
+  margin: 5px;
+}
+.infoGaleria2 div .imagen6 {
+  grid-area: imagen6;
+  background-image: url(../imagenes/Viajes/img6.jpg);
+  background-position: center;
+  margin: 5px;
+}
+.infoGaleria2 div .imagen7 {
+  grid-area: imagen7;
+  background-image: url(../imagenes/Viajes/img7.jpg);
+  background-position: center;
+  position: contain;
+  margin: 5px;
+}
+.infoGaleria2 div .imagen8 {
+  grid-area: imagen8;
+  background-image: url(../imagenes/Viajes/img8.jpg);
+  background-position: center;
+  margin: 5px;
+}
+
+.infoGaleria3 {
+  background-color: #cd8c52;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+.infoGaleria3 h1 {
+  text-align: center;
+  padding: 10px;
+  font-size: 20px;
+}
+.infoGaleria3 p {
+  text-align: center;
+  padding: 10px;
+  font-size: 20px;
+}
+.infoGaleria3 div .imagen1 {
+  grid-area: imagen1;
+  background-image: url(../imagenes/Animales/img1.JPG);
+  background-position: center;
+  background-size: cover;
+  margin: 5px;
+}
+.infoGaleria3 div .imagen2 {
+  grid-area: imagen2;
+  background-image: url(../imagenes/Animales/img2.JPG);
+  background-position: center;
+  background-size: cover;
+  margin: 5px;
+}
+.infoGaleria3 div .imagen3 {
+  grid-area: imagen3;
+  background-image: url(../imagenes/Animales/img3.JPG);
+  background-position: center;
+  background-size: cover;
+  margin: 5px;
+}
+.infoGaleria3 div .imagen4 {
+  grid-area: imagen4;
+  background-image: url(../imagenes/Animales/img4.JPG);
+  background-position: center;
+  background-size: cover;
+  margin: 5px;
+}
+.infoGaleria3 div .imagen5 {
+  grid-area: imagen5;
+  background-image: url(../imagenes/Animales/img5.JPG);
+  background-position: center;
+  background-size: cover;
+  margin: 5px;
+}
+.infoGaleria3 div .imagen6 {
+  grid-area: imagen6;
+  background-image: url(../imagenes/Animales/img6.JPG);
+  background-position: center;
+  background-size: cover;
+  margin: 5px;
+}
+
+.infoGaleria4 {
+  background-color: #cd8c52;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+.infoGaleria4 h1 {
+  text-align: center;
+  padding: 10px;
+  font-size: 20px;
+}
+.infoGaleria4 p {
+  text-align: center;
+  padding: 10px;
+  font-size: 20px;
+}
+.infoGaleria4 div .imagen1 {
+  grid-area: imagen1;
+  background-image: url(../imagenes/Amigos/img1.JPG);
+  background-position: center;
+  background-size: cover;
+  margin: 5px;
+}
+.infoGaleria4 div .imagen2 {
+  grid-area: imagen2;
+  background-image: url(../imagenes/Amigos/img2.JPG);
+  background-position: center;
+  background-size: cover;
+  margin: 5px;
+}
+.infoGaleria4 div .imagen3 {
+  grid-area: imagen3;
+  background-image: url(../imagenes/Amigos/img3.JPG);
+  background-position: center;
+  background-size: cover;
+  margin: 5px;
+}
+.infoGaleria4 div .imagen4 {
+  grid-area: imagen4;
+  background-image: url(../imagenes/Amigos/img4.JPG);
+  background-position: center;
+  background-size: cover;
+  margin: 5px;
+}
+.infoGaleria4 div .imagen5 {
+  grid-area: imagen5;
+  background-image: url(../imagenes/Amigos/img5.JPG);
+  background-position: center;
+  background-size: cover;
+  margin: 5px;
+}
+.infoGaleria4 div .imagen6 {
+  grid-area: imagen6;
+  background-image: url(../imagenes/Amigos/img6.JPG);
+  background-position: center;
+  background-size: cover;
+  margin: 5px;
+}
+.infoGaleria4 div .imagen7 {
+  grid-area: imagen7;
+  background-image: url(../imagenes/Amigos/img7.JPG);
+  background-position: center;
+  background-size: cover;
+  margin: 5px;
+}
+.infoGaleria4 div .imagen8 {
+  grid-area: imagen8;
+  background-image: url(../imagenes/Amigos/img8.JPG);
+  background-position: center;
+  background-size: cover;
+  margin: 5px;
+}
+.infoGaleria4 div .imagen9 {
+  grid-area: imagen9;
+  background-image: url(../imagenes/Amigos/img9.JPG);
+  background-position: center;
+  background-size: cover;
+  margin: 5px;
 }
 
 .infoContacto1 {
@@ -275,7 +550,7 @@ body {
 @media screen and (max-width: 425px) {
   .contenedor {
     grid-template-columns: 425px;
-    grid-template-rows: 400px 80px 800px 1300px 300px 100px;
+    grid-template-rows: 400px 80px 800px 1300px 300px 250px;
     grid-template-areas: "header" "titulo" "main" "info" "contacto" "footer";
   }
   .header ul {
@@ -317,7 +592,8 @@ body {
     text-align: center;
     padding-bottom: 30px;
   }
-  .footerIndex {
+  .footer {
+    display: flex;
     flex-direction: column;
     justify-content: center;
     padding: 10px;
@@ -326,7 +602,7 @@ body {
 @media screen and (max-width: 425px) {
   .contenedorS {
     grid-template-columns: 425px;
-    grid-template-rows: 400px 80px 800px 1000px 1200px 100px;
+    grid-template-rows: 400px 80px 800px 1000px 1200px 250px;
     grid-template-areas: "header" "titulo" "main" "mapa" "info" "footer";
   }
   .header ul {
@@ -368,7 +644,127 @@ body {
     padding: 20px;
     width: 200px;
   }
-  .footerSobremi {
+  .footer {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding: 10px;
+  }
+}
+@media screen and (max-width: 425px) {
+  .contenedorP {
+    grid-template-columns: 425px;
+    grid-template-rows: 400px 80px 1100px 600px 250px;
+    grid-template-areas: "header" "titulo" "main" "info" "footer";
+  }
+  .header ul {
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    padding: 20px;
+    font-size: 25px;
+  }
+  .titulo {
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    font-size: 25px;
+  }
+  .infoProductos1 {
+    display: flex;
+    flex-wrap: wrap;
+    text-align: center;
+    font-weight: 200px;
+  }
+  .infoProductos2 {
+    display: flex;
+    flex-wrap: wrap;
+    text-align: center;
+    font-weight: 200px;
+  }
+  .footer {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding: 10px;
+  }
+}
+@media screen and (max-width: 425px) {
+  .contenedorG {
+    grid-template-columns: 425px;
+    grid-template-rows: 400px 80px 400px 1700px 1300px 1700px 250px;
+    grid-template-areas: "header" "titulo" "main" "info1" "info2" "info3" "footer";
+  }
+  .header ul {
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    padding: 20px;
+    font-size: 25px;
+  }
+  .titulo {
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    font-size: 25px;
+  }
+  .infoGaleria1 {
+    display: flex;
+    flex-wrap: wrap;
+    text-align: center;
+    font-weight: 200px;
+  }
+  .infoGaleria2 {
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    font-weight: 200px;
+  }
+  .infoGaleria3 {
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    font-weight: 200px;
+  }
+  .infoGaleria4 {
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    font-weight: 200px;
+  }
+}
+@media screen and (max-width: 425px) {
+  .contenedorC {
+    grid-template-columns: 425px;
+    grid-template-rows: 400px 80px 400px 500px 250px;
+    grid-template-areas: "header" "titulo" "main" "info" "footer";
+  }
+  .header ul {
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    padding: 20px;
+    font-size: 25px;
+  }
+  .titulo {
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    font-size: 25px;
+  }
+  .infoContacto1 {
+    display: flex;
+    flex-wrap: wrap;
+    text-align: center;
+    font-weight: 200px;
+  }
+  .infoContacto2 {
+    display: flex;
+    flex-wrap: wrap;
+    text-align: center;
+    font-weight: 200px;
+  }
+  .footer {
     display: flex;
     flex-direction: column;
     justify-content: center;
