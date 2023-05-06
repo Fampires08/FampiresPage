@@ -22,7 +22,7 @@
     "titulo titulo"
     "main main"
     "mapa mapa"
-    "info info"
+    "info1 info1"
     "footer footer";
 }
 
@@ -67,6 +67,7 @@
     justify-content: center;
     padding: 10px;
 }
+
 // GRILLAS DE GALERIA IMAGEN2
 .imgGaleria2{
     display: grid;
@@ -79,6 +80,7 @@
     justify-content: center;
     padding: 10px;
 }
+
 // GRILLAS DE GALERIA IMAGEN3
 .imgGaleria3{
     display: grid;
@@ -92,7 +94,6 @@
     justify-content: center;
     padding: 10px;
 }
-
 // GRILLAS CONTACTO
 .contenedorC{
     display: grid;

@@ -9,7 +9,7 @@
   display: grid;
   grid-template-columns: 1fr 1fr;
   grid-template-rows: 100px 80px 500px 500px 500px 50px;
-  grid-template-areas: "header header" "titulo titulo" "main main" "mapa mapa" "info info" "footer footer";
+  grid-template-areas: "header header" "titulo titulo" "main main" "mapa mapa" "info1 info1" "footer footer";
 }
 
 .contenedorP {
@@ -197,7 +197,7 @@ body {
 }
 
 .infoSobremi3 {
-  grid-area: info;
+  grid-area: info1;
   background-color: #cd8c52;
   display: flex;
   flex-direction: row;
@@ -215,6 +215,21 @@ body {
   justify-content: space-evenly;
   padding: 20px;
   width: 500px;
+}
+
+.footer {
+  grid-area: footer;
+  background-color: #7d1a0c;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-evenly;
+  align-items: center;
+}
+.footer a {
+  color: white;
+  font-size: 20px;
+  text-decoration: none;
+  margin: 35px;
 }
 
 .header {
@@ -273,6 +288,21 @@ body {
   width: 400px;
   height: 300px;
   padding: 15px;
+}
+
+.footer {
+  grid-area: footer;
+  background-color: #7d1a0c;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-evenly;
+  align-items: center;
+}
+.footer a {
+  color: white;
+  font-size: 20px;
+  text-decoration: none;
+  margin: 35px;
 }
 
 .infoGaleria1 {
@@ -507,6 +537,21 @@ body {
   margin: 5px;
 }
 
+.footer {
+  grid-area: footer;
+  background-color: #7d1a0c;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-evenly;
+  align-items: center;
+}
+.footer a {
+  color: white;
+  font-size: 20px;
+  text-decoration: none;
+  margin: 35px;
+}
+
 .infoContacto1 {
   grid-area: main;
   background-color: #b0a18f;
@@ -545,6 +590,21 @@ body {
   font-size: 20px;
   padding: 20px;
   text-align: center;
+}
+
+.footer {
+  grid-area: footer;
+  background-color: #7d1a0c;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-evenly;
+  align-items: center;
+}
+.footer a {
+  color: white;
+  font-size: 20px;
+  text-decoration: none;
+  margin: 35px;
 }
 
 @media screen and (max-width: 425px) {
@@ -603,7 +663,7 @@ body {
   .contenedorS {
     grid-template-columns: 425px;
     grid-template-rows: 400px 80px 800px 1000px 1200px 250px;
-    grid-template-areas: "header" "titulo" "main" "mapa" "info" "footer";
+    grid-template-areas: "header" "titulo" "main" "mapa" "info1" "footer";
   }
   .header ul {
     display: flex;
@@ -636,9 +696,7 @@ body {
   }
   .infoSobremi3 {
     display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
+    flex-wrap: wrap;
     font-weight: 200;
     text-align: center;
     padding: 20px;
@@ -692,7 +750,7 @@ body {
 @media screen and (max-width: 425px) {
   .contenedorG {
     grid-template-columns: 425px;
-    grid-template-rows: 400px 80px 400px 1700px 1300px 1700px 250px;
+    grid-template-rows: 400px 80px 400px 1700px 1300px 3200px 100px;
     grid-template-areas: "header" "titulo" "main" "info1" "info2" "info3" "footer";
   }
   .header ul {
@@ -720,17 +778,208 @@ body {
     text-align: center;
     font-weight: 200px;
   }
+  .infoGaleria2 .imgGaleria1 {
+    grid-template-columns: 1fr;
+    grid-template-rows: 150px 150px 200px 300px 200px 300px 300px;
+    grid-template-areas: "img1" "img2" "img4" "img5" "img6" "img7" "img8";
+  }
+  .infoGaleria2 .imgGaleria1 .imagen1 {
+    grid-area: img1;
+    background-image: url(../imagenes/Viajes/img1.jpg);
+    background-position: center;
+    margin: 5px;
+    background-position: center;
+    background-size: cover;
+  }
+  .infoGaleria2 .imgGaleria1 .imagen2 {
+    grid-area: img2;
+    background-image: url(../imagenes/Viajes/img2.jpg);
+    background-position: center;
+    margin: 5px;
+    background-position: center;
+    background-size: cover;
+  }
+  .infoGaleria2 .imgGaleria1 .imagen3 {
+    grid-area: img3;
+    background-image: url(../imagenes/Viajes/img3.JPG);
+    background-position: center;
+    margin: 5px;
+    background-position: center;
+    background-size: cover;
+  }
+  .infoGaleria2 .imgGaleria1 .imagen4 {
+    grid-area: img4;
+    background-image: url(../imagenes/Viajes/img4.jpg);
+    background-position: center;
+    margin: 5px;
+    background-position: center;
+    background-size: cover;
+  }
+  .infoGaleria2 .imgGaleria1 .imagen5 {
+    grid-area: img5;
+    background-image: url(../imagenes/Viajes/img5.jpg);
+    background-position: center;
+    margin: 5px;
+    background-position: center;
+    background-size: cover;
+  }
+  .infoGaleria2 .imgGaleria1 .imagen6 {
+    grid-area: img6;
+    background-image: url(../imagenes/Viajes/img6.jpg);
+    background-position: center;
+    margin: 5px;
+    background-position: center;
+    background-size: cover;
+  }
+  .infoGaleria2 .imgGaleria1 .imagen7 {
+    grid-area: img7;
+    background-image: url(../imagenes/Viajes/img7.jpg);
+    background-position: center;
+    margin: 5px;
+    background-position: center;
+    background-size: cover;
+  }
+  .infoGaleria2 .imgGaleria1 .imagen8 {
+    grid-area: img8;
+    background-image: url(../imagenes/Viajes/img8.jpg);
+    background-position: center;
+    margin: 5px;
+    background-position: center;
+    background-size: cover;
+  }
   .infoGaleria3 {
     display: flex;
     flex-direction: column;
     text-align: center;
     font-weight: 200px;
   }
+  .infoGaleria3 .imgGaleria2 {
+    grid-template-columns: 1fr;
+    grid-template-rows: 100px 150px 150px 200px 250px 300px;
+    grid-template-areas: "img1" "img2" "img3" "img4" "img5" "img6";
+  }
+  .infoGaleria3 .imgGaleria2 .imagen1 {
+    grid-area: img1;
+    background-image: url(../imagenes/Animales/img1.jpg);
+    background-position: center;
+    margin: 5px;
+    background-position: center;
+    background-size: cover;
+  }
+  .infoGaleria3 .imgGaleria2 .imagen2 {
+    grid-area: img2;
+    background-image: url(../imagenes/Animales/img2.jpg);
+    background-position: center;
+    margin: 5px;
+    background-position: center;
+    background-size: cover;
+  }
+  .infoGaleria3 .imgGaleria2 .imagen3 {
+    grid-area: img3;
+    background-image: url(../imagenes/Animales/img3.jpg);
+    background-position: center;
+    margin: 5px;
+    background-position: center;
+    background-size: cover;
+  }
+  .infoGaleria3 .imgGaleria2 .imagen4 {
+    grid-area: img4;
+    background-image: url(../imagenes/Animales/img4.jpg);
+    background-position: center;
+    margin: 5px;
+    background-position: center;
+    background-size: cover;
+  }
+  .infoGaleria3 .imgGaleria2 .imagen5 {
+    grid-area: img5;
+    background-image: url(../imagenes/Animales/img5.jpg);
+    background-position: center;
+    margin: 5px;
+    background-position: center;
+    background-size: cover;
+  }
+  .infoGaleria3 .imgGaleria2 .imagen6 {
+    grid-area: img6;
+    background-image: url(../imagenes/Animales/img6.jpg);
+    background-position: center;
+    margin: 5px;
+    background-position: center;
+    background-size: cover;
+  }
   .infoGaleria4 {
     display: flex;
     flex-direction: column;
     text-align: center;
     font-weight: 200px;
+  }
+  .infoGaleria4 .imgGaleria3 {
+    grid-template-columns: 1fr;
+    grid-template-rows: 500px 300px 700px 400px 250px 300px 200px 300px 200px;
+    grid-template-areas: "img2" "img3" "img4" "img5" "img6" "img7" "img8" "img9";
+  }
+  .infoGaleria4 .imgGaleria3 .imagen2 {
+    grid-area: img2;
+    background-image: url(../imagenes/Amigos/img2.JPG);
+    background-position: center;
+    margin: 5px;
+    background-position: center;
+    background-size: cover;
+  }
+  .infoGaleria4 .imgGaleria3 .imagen3 {
+    grid-area: img3;
+    background-image: url(../imagenes/Amigos/img3.JPG);
+    background-position: center;
+    margin: 5px;
+    background-position: center;
+    background-size: cover;
+  }
+  .infoGaleria4 .imgGaleria3 .imagen4 {
+    grid-area: img4;
+    background-image: url(../imagenes/Amigos/img4.JPG);
+    background-position: center;
+    margin: 5px;
+    background-position: center;
+    background-size: cover;
+  }
+  .infoGaleria4 .imgGaleria3 .imagen5 {
+    grid-area: img5;
+    background-image: url(../imagenes/Amigos/img5.JPG);
+    background-position: center;
+    margin: 5px;
+    background-position: center;
+    background-size: cover;
+  }
+  .infoGaleria4 .imgGaleria3 .imagen6 {
+    grid-area: img6;
+    background-image: url(../imagenes/Amigos/img6.JPG);
+    background-position: center;
+    margin: 5px;
+    background-position: center;
+    background-size: cover;
+  }
+  .infoGaleria4 .imgGaleria3 .imagen7 {
+    grid-area: img7;
+    background-image: url(../imagenes/Amigos/img7.JPG);
+    background-position: center;
+    margin: 5px;
+    background-position: center;
+    background-size: cover;
+  }
+  .infoGaleria4 .imgGaleria3 .imagen8 {
+    grid-area: img8;
+    background-image: url(../imagenes/Amigos/img8.JPG);
+    background-position: center;
+    margin: 5px;
+    background-position: center;
+    background-size: cover;
+  }
+  .infoGaleria4 .imgGaleria3 .imagen9 {
+    grid-area: img9;
+    background-image: url(../imagenes/Amigos/img9.JPG);
+    background-position: center;
+    margin: 5px;
+    background-position: center;
+    background-size: cover;
   }
 }
 @media screen and (max-width: 425px) {

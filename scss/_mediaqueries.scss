@@ -69,7 +69,7 @@
         "titulo"
         "main"
         "mapa"
-        "info"
+        "info1"
         "footer";  
     }
     .header ul{
@@ -103,9 +103,9 @@
     }
     .infoSobremi3{
         display: flex;
-        flex-direction: column;
-        justify-content: center;
-        align-items: center;
+        flex-wrap: wrap;
+        // justify-content: center;
+        // align-items: center;
         font-weight: 200;
         text-align: center;
         padding: 20px;
@@ -164,96 +164,339 @@
     }
 }
 // MEDIA QUERIES GALERIA
-@media screen and (max-width: 425px) {
+@media screen and (max-width: 425px){
     .contenedorG{
         grid-template-columns: 425px;
-        grid-template-rows: 400px 80px 400px 1700px 1300px 1700px 250px;
-        grid-template-areas: 
-        "header"
-        "titulo"
-        "main"
-        "info1"
-        "info2"
-        "info3"
-        "footer";
+        grid-template-rows: 400px 80px 400px 1700px 1300px 3200px 100px;
+        grid-template-areas:
+            "header"
+            "titulo"
+            "main"
+            "info1"
+            "info2"
+            "info3"
+            "footer";
     }
-    .header ul{
+    .header ul {
         display: flex;
         flex-direction: column;
         text-align: center;
         padding: 20px;
         font-size: 25px;
     }
-    .titulo{
+    .titulo {
         display: flex;
         flex-direction: column;
         text-align: center;
         font-size: 25px;
     }
-    .infoGaleria1{
+    .infoGaleria1 {
         display: flex;
         flex-wrap: wrap;
         text-align: center;
         font-weight: 200px;
     }
-    .infoGaleria2{
+    .infoGaleria2 {
         display: flex;
         flex-direction: column;
         text-align: center;
         font-weight: 200px;
+
+        .imgGaleria1 {
+            grid-template-columns: 1fr;
+            grid-template-rows: 150px 150px 200px 300px 200px 300px 300px;
+            grid-template-areas:
+                "img1"
+                "img2"
+                "img4"
+                "img5"
+                "img6"
+                "img7"
+                "img8";
+
+            .imagen1 {
+                grid-area: img1;
+                background-image: url(../imagenes/Viajes/img1.jpg);
+                background-position: center;
+                margin: 5px;
+                background-position: center;
+                background-size: cover;
+            }
+
+            .imagen2 {
+                grid-area: img2;
+                background-image: url(../imagenes/Viajes/img2.jpg);
+                background-position: center;
+                margin: 5px;
+                background-position: center;
+                background-size: cover;
+            }
+
+            .imagen3 {
+                grid-area: img3;
+                background-image: url(../imagenes/Viajes/img3.JPG);
+                background-position: center;
+                margin: 5px;
+                background-position: center;
+                background-size: cover;
+            }
+
+            .imagen4 {
+                grid-area: img4;
+                background-image: url(../imagenes/Viajes/img4.jpg);
+                background-position: center;
+                margin: 5px;
+                background-position: center;
+                background-size: cover;
+            }
+
+            .imagen5 {
+                grid-area: img5;
+                background-image: url(../imagenes/Viajes/img5.jpg);
+                background-position: center;
+                margin: 5px;
+                background-position: center;
+                background-size: cover;
+            }
+
+            .imagen6 {
+                grid-area: img6;
+                background-image: url(../imagenes/Viajes/img6.jpg);
+                background-position: center;
+                margin: 5px;
+                background-position: center;
+                background-size: cover;
+            }
+
+            .imagen7 {
+                grid-area: img7;
+                background-image: url(../imagenes/Viajes/img7.jpg);
+                background-position: center;
+                margin: 5px;
+                background-position: center;
+                background-size: cover;
+            }
+
+            .imagen8 {
+                grid-area: img8;
+                background-image: url(../imagenes/Viajes/img8.jpg);
+                background-position: center;
+                margin: 5px;
+                background-position: center;
+                background-size: cover;
+            }
+        }
     }
-    .infoGaleria3{
+    .infoGaleria3 {
         display: flex;
         flex-direction: column;
         text-align: center;
         font-weight: 200px;
+
+        .imgGaleria2 {
+            grid-template-columns: 1fr;
+            grid-template-rows: 100px 150px 150px 200px 250px 300px;
+            grid-template-areas:
+                "img1"
+                "img2"
+                "img3"
+                "img4"
+                "img5"
+                "img6";
+
+            .imagen1 {
+                grid-area: img1;
+                background-image: url(../imagenes/Animales/img1.jpg);
+                background-position: center;
+                margin: 5px;
+                background-position: center;
+                background-size: cover;
+            }
+
+            .imagen2 {
+                grid-area: img2;
+                background-image: url(../imagenes/Animales/img2.jpg);
+                background-position: center;
+                margin: 5px;
+                background-position: center;
+                background-size: cover;
+            }
+
+            .imagen3 {
+                grid-area: img3;
+                background-image: url(../imagenes/Animales/img3.jpg);
+                background-position: center;
+                margin: 5px;
+                background-position: center;
+                background-size: cover;
+            }
+
+            .imagen4 {
+                grid-area: img4;
+                background-image: url(../imagenes/Animales/img4.jpg);
+                background-position: center;
+                margin: 5px;
+                background-position: center;
+                background-size: cover;
+            }
+
+            .imagen5 {
+                grid-area: img5;
+                background-image: url(../imagenes/Animales/img5.jpg);
+                background-position: center;
+                margin: 5px;
+                background-position: center;
+                background-size: cover;
+            }
+
+            .imagen6 {
+                grid-area: img6;
+                background-image: url(../imagenes/Animales/img6.jpg);
+                background-position: center;
+                margin: 5px;
+                background-position: center;
+                background-size: cover;
+            }
+        }
     }
-    .infoGaleria4{
+    .infoGaleria4 {
         display: flex;
         flex-direction: column;
         text-align: center;
         font-weight: 200px;
-    }
+    
+            .imgGaleria3 {
+                grid-template-columns: 1fr;
+                grid-template-rows: 500px 300px 700px 400px 250px 300px 200px 300px 200px;
+                grid-template-areas:
+                    "img2"
+                    "img3"
+                    "img4"
+                    "img5"
+                    "img6"
+                    "img7"
+                    "img8"
+                    "img9";
+    
+                .imagen2 {
+                    grid-area: img2;
+                    background-image: url(../imagenes/Amigos/img2.JPG);
+                    background-position: center;
+                    margin: 5px;
+                    background-position: center;
+                    background-size: cover;
+                }
+    
+                .imagen3 {
+                    grid-area: img3;
+                    background-image: url(../imagenes/Amigos/img3.JPG);
+                    background-position: center;
+                    margin: 5px;
+                    background-position: center;
+                    background-size: cover;
+                }
+    
+                .imagen4 {
+                    grid-area: img4;
+                    background-image: url(../imagenes/Amigos/img4.JPG);
+                    background-position: center;
+                    margin: 5px;
+                    background-position: center;
+                    background-size: cover;
+                }
+    
+                .imagen5 {
+                    grid-area: img5;
+                    background-image: url(../imagenes/Amigos/img5.JPG);
+                    background-position: center;
+                    margin: 5px;
+                    background-position: center;
+                    background-size: cover;
+                }
+    
+                .imagen6 {
+                    grid-area: img6;
+                    background-image: url(../imagenes/Amigos/img6.JPG);
+                    background-position: center;
+                    margin: 5px;
+                    background-position: center;
+                    background-size: cover;
+                }
+    
+                .imagen7 {
+                    grid-area: img7;
+                    background-image: url(../imagenes/Amigos/img7.JPG);
+                    background-position: center;
+                    margin: 5px;
+                    background-position: center;
+                    background-size: cover;
+                }
+    
+                .imagen8 {
+                    grid-area: img8;
+                    background-image: url(../imagenes/Amigos/img8.JPG);
+                    background-position: center;
+                    margin: 5px;
+                    background-position: center;
+                    background-size: cover;
+                }
+    
+                .imagen9 {
+                    grid-area: img9;
+                    background-image: url(../imagenes/Amigos/img9.JPG);
+                    background-position: center;
+                    margin: 5px;
+                    background-position: center;
+                    background-size: cover;
+                }
+            }
+        }
 }
+    
 
 // MEDIA QUERIES CONTACTO
-@media screen and (max-width: 425px) {
-    .contenedorC{
+@media screen and (max-width: 425px){
+    .contenedorC {
         grid-template-columns: 425px;
         grid-template-rows: 400px 80px 400px 500px 250px;
-        grid-template-areas: 
-        "header"
-        "titulo"
-        "main"
-        "info"
-        "footer";
+        grid-template-areas:
+            "header"
+            "titulo"
+            "main"
+            "info"
+            "footer";
     }
-    .header ul{
+
+    .header ul {
         display: flex;
         flex-direction: column;
         text-align: center;
         padding: 20px;
         font-size: 25px;
     }
-    .titulo{
+
+    .titulo {
         display: flex;
         flex-direction: column;
         text-align: center;
         font-size: 25px;
     }
-    .infoContacto1{
+
+    .infoContacto1 {
         display: flex;
         flex-wrap: wrap;
         text-align: center;
         font-weight: 200px;
     }
-    .infoContacto2{
+
+    .infoContacto2 {
         display: flex;
         flex-wrap: wrap;
         text-align: center;
         font-weight: 200px;
     }
-    .footer{
+
+    .footer {
         display: flex;
         flex-direction: column;
         justify-content: center;
