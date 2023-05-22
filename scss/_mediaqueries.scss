@@ -215,11 +215,11 @@
             grid-template-areas:
                 "img1"
                 "img2"
+                "img3"
                 "img4"
                 "img5"
                 "img6"
-                "img7"
-                "img8";
+                "img7";
 
             .imagen1 {
                 grid-area: img1;
@@ -241,7 +241,7 @@
 
             .imagen3 {
                 grid-area: img3;
-                background-image: url(../imagenes/Viajes/img3.JPG);
+                background-image: url(../imagenes/Viajes/img4.jpg);
                 background-position: center;
                 margin: 5px;
                 background-position: center;
@@ -250,7 +250,7 @@
 
             .imagen4 {
                 grid-area: img4;
-                background-image: url(../imagenes/Viajes/img4.jpg);
+                background-image: url(../imagenes/Viajes/img5.jpg);
                 background-position: center;
                 margin: 5px;
                 background-position: center;
@@ -259,7 +259,7 @@
 
             .imagen5 {
                 grid-area: img5;
-                background-image: url(../imagenes/Viajes/img5.jpg);
+                background-image: url(../imagenes/Viajes/img6.jpg);
                 background-position: center;
                 margin: 5px;
                 background-position: center;
@@ -268,7 +268,7 @@
 
             .imagen6 {
                 grid-area: img6;
-                background-image: url(../imagenes/Viajes/img6.jpg);
+                background-image: url(../imagenes/Viajes/img7.jpg);
                 background-position: center;
                 margin: 5px;
                 background-position: center;
@@ -277,15 +277,6 @@
 
             .imagen7 {
                 grid-area: img7;
-                background-image: url(../imagenes/Viajes/img7.jpg);
-                background-position: center;
-                margin: 5px;
-                background-position: center;
-                background-size: cover;
-            }
-
-            .imagen8 {
-                grid-area: img8;
                 background-image: url(../imagenes/Viajes/img8.jpg);
                 background-position: center;
                 margin: 5px;
