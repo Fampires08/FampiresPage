@@ -3,7 +3,7 @@
 @media screen and (max-width: 425px){
     .contenedor{
         grid-template-columns: 425px;
-        grid-template-rows: 400px 80px 800px 1300px 300px 250px;
+        grid-template-rows: 500px 80px 800px 1300px 300px 250px;
         grid-template-areas: 
         "header"
         "titulo"
@@ -13,17 +13,20 @@
         "footer";
     }
     .header ul{
+        grid-area: header;
         flex-direction: column;
         text-align: center;
         padding: 20px;
         font-size: 25px;
     }
     .titulo{
+        grid-area: titulo;
         flex-direction: column;
         text-align: center;
         font-size: 25px;
     }
     .infoIndex1{
+        grid-area: main;
         flex-wrap: wrap;
         text-align: center;
         font-weight: 200;
@@ -32,24 +35,23 @@
         }
     }
     .infoIndex2{
+        grid-area: info;
         flex-wrap: wrap;
         text-align: center;
         img{
             width: 300px;
         }
     }
-    .contactoIndexP{
-        background-color: #fbeed3;
-        text-align: center;
-        padding: 10px;
-        p{
-            padding: 15px;  
-        }
-    }
     .contactoIndex{
+        grid-area: contacto;
         flex-direction: column;
         text-align: center;
         padding-bottom: 30px;
+        background-color: #fbeed3;
+        text-align: center;
+        p{
+            padding: 15px;  
+        }
     }
     .footer{
         display: flex;
@@ -104,12 +106,17 @@
     .infoSobremi3{
         display: flex;
         flex-wrap: wrap;
-        // justify-content: center;
-        // align-items: center;
+        justify-content: center;
+        align-items: center;
         font-weight: 200;
         text-align: center;
         padding: 20px;
-        width: 200px;
+        .imgSobremi2{
+            width: 400px;
+        }
+        .imgSobremi3{
+            width: 400px;
+        }
     }
     .footer{
         display: flex;
@@ -123,7 +130,7 @@
 @media screen and (max-width: 425px) {
     .contenedorP{
         grid-template-columns: 425px;
-        grid-template-rows: 400px 80px 1100px 600px 250px;
+        grid-template-rows: 400px 80px 1100px 600px 300px;
         grid-template-areas: 
         "header"
         "titulo"
@@ -167,7 +174,7 @@
 @media screen and (max-width: 425px){
     .contenedorG{
         grid-template-columns: 425px;
-        grid-template-rows: 400px 80px 400px 1700px 1300px 3200px 100px;
+        grid-template-rows: 400px 80px 400px 1700px 1300px 3200px 300px;
         grid-template-areas:
             "header"
             "titulo"
@@ -367,7 +374,7 @@
     
             .imgGaleria3 {
                 grid-template-columns: 1fr;
-                grid-template-rows: 500px 300px 700px 400px 250px 300px 200px 300px 200px;
+                grid-template-rows: 500px 300px 700px 400px 250px 300px 200px 300px 290px;
                 grid-template-areas:
                     "img2"
                     "img3"

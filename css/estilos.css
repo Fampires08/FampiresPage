@@ -7,7 +7,7 @@
 
 .contenedorS {
   display: grid;
-  grid-template-columns: 1fr 1fr;
+  grid-template-columns: 1fr;
   grid-template-rows: 100px 80px 500px 500px 500px 50px;
   grid-template-areas: "header header" "titulo titulo" "main main" "mapa mapa" "info1 info1" "footer footer";
 }
@@ -15,14 +15,14 @@
 .contenedorP {
   display: grid;
   grid-template-columns: 1fr;
-  grid-template-rows: 100px 80px 400px 400px 100px;
+  grid-template-rows: 100px 80px 400px 400px 50px;
   grid-template-areas: "header" "titulo" "main" "info" "footer";
 }
 
 .contenedorG {
   display: grid;
   grid-template-columns: 1900px;
-  grid-template-rows: 100px 80px 180px 1700px 1300px 1700px 50px;
+  grid-template-rows: 100px 80px 200px 1700px 1300px 1300px 100px;
   grid-template-areas: "header" "titulo" "main" "info1" "info2" "info3" "footer";
 }
 
@@ -312,13 +312,13 @@ body {
   justify-content: center;
 }
 .infoGaleria1 p {
-  font-size: 20px;
+  font-size: 25px;
   padding: 15px;
   text-align: center;
 }
 .infoGaleria1 ul {
   padding: 15px;
-  font-size: 20px;
+  font-size: 25px;
   text-align: center;
 }
 .infoGaleria1 ul li {
@@ -341,12 +341,12 @@ body {
 .infoGaleria2 h1 {
   text-align: center;
   padding: 10px;
-  font-size: 20px;
+  font-size: 25px;
 }
 .infoGaleria2 p {
   text-align: center;
   padding: 10px;
-  font-size: 20px;
+  font-size: 25px;
 }
 .infoGaleria2 div .imagen1 {
   grid-area: imagen1;
@@ -407,12 +407,12 @@ body {
 .infoGaleria3 h1 {
   text-align: center;
   padding: 10px;
-  font-size: 20px;
+  font-size: 25px;
 }
 .infoGaleria3 p {
   text-align: center;
   padding: 10px;
-  font-size: 20px;
+  font-size: 25px;
 }
 .infoGaleria3 div .imagen1 {
   grid-area: imagen1;
@@ -466,12 +466,12 @@ body {
 .infoGaleria4 h1 {
   text-align: center;
   padding: 10px;
-  font-size: 20px;
+  font-size: 25px;
 }
 .infoGaleria4 p {
   text-align: center;
   padding: 10px;
-  font-size: 20px;
+  font-size: 25px;
 }
 .infoGaleria4 div .imagen1 {
   grid-area: imagen1;
@@ -563,10 +563,10 @@ body {
 }
 .infoContacto1 p {
   padding-top: 20px;
-  font-size: 20px;
+  font-size: 25px;
 }
 .infoContacto1 ul {
-  font-size: 20px;
+  font-size: 25px;
   text-decoration: none;
 }
 .infoContacto1 ul li {
@@ -587,7 +587,7 @@ body {
   font-size: 30px;
 }
 .infoContacto2 div {
-  font-size: 20px;
+  font-size: 25px;
   padding: 20px;
   text-align: center;
 }
@@ -602,7 +602,7 @@ body {
 }
 .footer a {
   color: white;
-  font-size: 20px;
+  font-size: 25px;
   text-decoration: none;
   margin: 35px;
 }
@@ -610,21 +610,24 @@ body {
 @media screen and (max-width: 425px) {
   .contenedor {
     grid-template-columns: 425px;
-    grid-template-rows: 400px 80px 800px 1300px 300px 250px;
+    grid-template-rows: 500px 80px 800px 1300px 300px 250px;
     grid-template-areas: "header" "titulo" "main" "info" "contacto" "footer";
   }
   .header ul {
+    grid-area: header;
     flex-direction: column;
     text-align: center;
     padding: 20px;
     font-size: 25px;
   }
   .titulo {
+    grid-area: titulo;
     flex-direction: column;
     text-align: center;
     font-size: 25px;
   }
   .infoIndex1 {
+    grid-area: main;
     flex-wrap: wrap;
     text-align: center;
     font-weight: 200;
@@ -633,24 +636,23 @@ body {
     width: 300px;
   }
   .infoIndex2 {
+    grid-area: info;
     flex-wrap: wrap;
     text-align: center;
   }
   .infoIndex2 img {
     width: 300px;
   }
-  .contactoIndexP {
-    background-color: #fbeed3;
-    text-align: center;
-    padding: 10px;
-  }
-  .contactoIndexP p {
-    padding: 15px;
-  }
   .contactoIndex {
+    grid-area: contacto;
     flex-direction: column;
     text-align: center;
     padding-bottom: 30px;
+    background-color: #fbeed3;
+    text-align: center;
+  }
+  .contactoIndex p {
+    padding: 15px;
   }
   .footer {
     display: flex;
@@ -697,10 +699,17 @@ body {
   .infoSobremi3 {
     display: flex;
     flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
     font-weight: 200;
     text-align: center;
     padding: 20px;
-    width: 200px;
+  }
+  .infoSobremi3 .imgSobremi2 {
+    width: 400px;
+  }
+  .infoSobremi3 .imgSobremi3 {
+    width: 400px;
   }
   .footer {
     display: flex;
@@ -712,7 +721,7 @@ body {
 @media screen and (max-width: 425px) {
   .contenedorP {
     grid-template-columns: 425px;
-    grid-template-rows: 400px 80px 1100px 600px 250px;
+    grid-template-rows: 400px 80px 1100px 600px 300px;
     grid-template-areas: "header" "titulo" "main" "info" "footer";
   }
   .header ul {
@@ -750,7 +759,7 @@ body {
 @media screen and (max-width: 425px) {
   .contenedorG {
     grid-template-columns: 425px;
-    grid-template-rows: 400px 80px 400px 1700px 1300px 3200px 100px;
+    grid-template-rows: 400px 80px 400px 1700px 1300px 3200px 300px;
     grid-template-areas: "header" "titulo" "main" "info1" "info2" "info3" "footer";
   }
   .header ul {
@@ -914,7 +923,7 @@ body {
   }
   .infoGaleria4 .imgGaleria3 {
     grid-template-columns: 1fr;
-    grid-template-rows: 500px 300px 700px 400px 250px 300px 200px 300px 200px;
+    grid-template-rows: 500px 300px 700px 400px 250px 300px 200px 300px 290px;
     grid-template-areas: "img2" "img3" "img4" "img5" "img6" "img7" "img8" "img9";
   }
   .infoGaleria4 .imgGaleria3 .imagen2 {

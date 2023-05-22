@@ -15,7 +15,7 @@
 // GRILLAS SOBRE MI
 .contenedorS{
     display: grid;
-    grid-template-columns: 1fr 1fr;
+    grid-template-columns: 1fr;
     grid-template-rows: 100px 80px 500px 500px 500px 50px;
     grid-template-areas: 
     "header header"
@@ -30,7 +30,7 @@
 .contenedorP{
     display: grid;
     grid-template-columns: 1fr;
-    grid-template-rows: 100px 80px 400px 400px 100px;
+    grid-template-rows: 100px 80px 400px 400px 50px;
     grid-template-areas: 
     "header"
     "titulo"
@@ -43,7 +43,7 @@
 .contenedorG{
     display: grid;
     grid-template-columns: 1900px;
-    grid-template-rows: 100px 80px 180px 1700px 1300px 1700px 50px;
+    grid-template-rows: 100px 80px 200px 1700px 1300px 1300px 100px;
     grid-template-areas: 
     "header"
     "titulo"
