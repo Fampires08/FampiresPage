@@ -285,65 +285,60 @@
         text-align: center;
         font-weight: 200px;
 
-        .imgGaleria2 {
+        .imgGaleria2{
             grid-template-columns: 1fr;
-            grid-template-rows: 100px 150px 150px 200px 250px 300px;
-            grid-template-areas:
-                "img1"
-                "img2"
-                "img3"
-                "img4"
-                "img5"
-                "img6";
-
-            .imagen1 {
+            grid-template-rows: 100px 150px 150px 200px 250px 300px ;
+            grid-template-areas: 
+            "img1"
+            "img2"
+            "img3"
+            "img4"
+            "img5"
+            "img6";
+            
+            .imagen1{
                 grid-area: img1;
-                background-image: url(../imagenes/Animales/img1.jpg);
+                background-image: url(../imagenes/Animales/img1.JPG);
                 background-position: center;
                 margin: 5px;
                 background-position: center;
                 background-size: cover;
             }
-
-            .imagen2 {
+            .imagen2{
                 grid-area: img2;
-                background-image: url(../imagenes/Animales/img2.jpg);
+                background-image: url(../imagenes/Animales/img2.JPG);
                 background-position: center;
                 margin: 5px;
                 background-position: center;
                 background-size: cover;
             }
-
-            .imagen3 {
+            .imagen3{
                 grid-area: img3;
-                background-image: url(../imagenes/Animales/img3.jpg);
+                background-image: url(../imagenes/Animales/img3.JPG);
                 background-position: center;
                 margin: 5px;
                 background-position: center;
                 background-size: cover;
             }
-
-            .imagen4 {
+            .imagen4{
                 grid-area: img4;
-                background-image: url(../imagenes/Animales/img4.jpg);
+                background-image: url(../imagenes/Animales/img4.JPG);
                 background-position: center;
                 margin: 5px;
                 background-position: center;
                 background-size: cover;
             }
-
-            .imagen5 {
+            .imagen5{
                 grid-area: img5;
-                background-image: url(../imagenes/Animales/img5.jpg);
+                background-image: url(../imagenes/Animales/img5.JPG);
                 background-position: center;
                 margin: 5px;
                 background-position: center;
                 background-size: cover;
             }
-
-            .imagen6 {
+            .imagen6{
                 grid-area: img6;
-                background-image: url(../imagenes/Animales/img6.jpg);
+                background-image: url(../imagenes/Animales/img6.JPG);
                 background-position: center;
                 margin: 5px;
                 background-position: center;

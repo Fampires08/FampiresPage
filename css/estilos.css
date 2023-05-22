@@ -862,7 +862,7 @@ body {
   }
   .infoGaleria3 .imgGaleria2 .imagen1 {
     grid-area: img1;
-    background-image: url(../imagenes/Animales/img1.jpg);
+    background-image: url(../imagenes/Animales/img1.JPG);
     background-position: center;
     margin: 5px;
     background-position: center;
@@ -870,7 +870,7 @@ body {
   }
   .infoGaleria3 .imgGaleria2 .imagen2 {
     grid-area: img2;
-    background-image: url(../imagenes/Animales/img2.jpg);
+    background-image: url(../imagenes/Animales/img2.JPG);
     background-position: center;
     margin: 5px;
     background-position: center;
@@ -878,7 +878,7 @@ body {
   }
   .infoGaleria3 .imgGaleria2 .imagen3 {
     grid-area: img3;
-    background-image: url(../imagenes/Animales/img3.jpg);
+    background-image: url(../imagenes/Animales/img3.JPG);
     background-position: center;
     margin: 5px;
     background-position: center;
@@ -886,7 +886,7 @@ body {
   }
   .infoGaleria3 .imgGaleria2 .imagen4 {
     grid-area: img4;
-    background-image: url(../imagenes/Animales/img4.jpg);
+    background-image: url(../imagenes/Animales/img4.JPG);
     background-position: center;
     margin: 5px;
     background-position: center;
@@ -894,7 +894,7 @@ body {
   }
   .infoGaleria3 .imgGaleria2 .imagen5 {
     grid-area: img5;
-    background-image: url(../imagenes/Animales/img5.jpg);
+    background-image: url(../imagenes/Animales/img5.JPG);
     background-position: center;
     margin: 5px;
     background-position: center;
@@ -902,7 +902,7 @@ body {
   }
   .infoGaleria3 .imgGaleria2 .imagen6 {
     grid-area: img6;
-    background-image: url(../imagenes/Animales/img6.jpg);
+    background-image: url(../imagenes/Animales/img6.JPG);
     background-position: center;
     margin: 5px;
     background-position: center;
