@@ -44,13 +44,17 @@
     }
     .contactoIndex{
         grid-area: contacto;
-        flex-direction: column;
+        flex-wrap: wrap;
         text-align: center;
         padding-bottom: 30px;
         background-color: #fbeed3;
         text-align: center;
         p{
             padding: 15px;  
+        }
+        form{
+            flex-direction: column;
+            justify-content: center;
         }
     }
     .footer{
