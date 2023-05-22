@@ -270,8 +270,9 @@
         }
         .imagen8{
             grid-area: imagen8;
-            background-image: url(../imagenes/Viajes/img8.jpg);
+            background-image: url(../imagenes/Viajes/img8.JPG);
             background-position: center;
+            background-size: cover;
             margin: 5px;
         }
     }

@@ -209,19 +209,19 @@
         text-align: center;
         font-weight: 200px;
 
-        .imgGaleria1 {
+        .imgGaleria1{
             grid-template-columns: 1fr;
             grid-template-rows: 150px 150px 200px 300px 200px 300px 300px;
-            grid-template-areas:
-                "img1"
-                "img2"
-                "img3"
-                "img4"
-                "img5"
-                "img6"
-                "img7";
+            grid-template-areas: 
+            "img1"
+            "img2"
+            "img3"
+            "img4"
+            "img5"
+            "img6"
+            "img7";
 
-            .imagen1 {
+            .imagen1{
                 grid-area: img1;
                 background-image: url(../imagenes/Viajes/img1.jpg);
                 background-position: center;
@@ -229,8 +229,7 @@
                 background-position: center;
                 background-size: cover;
             }
-
-            .imagen2 {
+            .imagen2{
                 grid-area: img2;
                 background-image: url(../imagenes/Viajes/img2.jpg);
                 background-position: center;
@@ -238,8 +237,7 @@
                 background-position: center;
                 background-size: cover;
             }
-
-            .imagen3 {
+            .imagen3{
                 grid-area: img3;
                 background-image: url(../imagenes/Viajes/img3.JPG);
                 background-position: center;
@@ -247,8 +245,7 @@
                 background-position: center;
                 background-size: cover;
             }
-
-            .imagen4 {
+            .imagen4{
                 grid-area: img4;
                 background-image: url(../imagenes/Viajes/img4.jpg);
                 background-position: center;
@@ -256,8 +253,7 @@
                 background-position: center;
                 background-size: cover;
             }
-
-            .imagen5 {
+            .imagen5{
                 grid-area: img5;
                 background-image: url(../imagenes/Viajes/img5.jpg);
                 background-position: center;
@@ -265,8 +261,7 @@
                 background-position: center;
                 background-size: cover;
             }
-
-            .imagen6 {
+            .imagen6{
                 grid-area: img6;
                 background-image: url(../imagenes/Viajes/img6.jpg);
                 background-position: center;
@@ -274,8 +269,7 @@
                 background-position: center;
                 background-size: cover;
             }
-
-            .imagen7 {
+            .imagen7{
                 grid-area: img7;
                 background-image: url(../imagenes/Viajes/img7.jpg);
                 background-position: center;

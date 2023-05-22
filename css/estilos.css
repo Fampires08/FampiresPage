@@ -30,7 +30,7 @@
   display: grid;
   grid-template-columns: repeat(4, 400px);
   grid-template-rows: repeat(4, 400px);
-  grid-template-areas: "imagen1 imagen1 imagen2 imagen3" "imagen4 imagen5 imagen5 imagen3" "imagen4 imagen6 imagen7 imagen3" "imagen4 imagen8 imagen8 imagen8";
+  grid-template-areas: "imagen1 imagen1 imagen5 imagen8" "imagen3 imagen2 imagen6 imagen8" "imagen3 imagen4 imagen4 imagen8" "imagen3 imagen7 imagen7 imagen7";
   justify-content: center;
   padding: 10px;
 }
@@ -393,8 +393,9 @@ body {
 }
 .infoGaleria2 div .imagen8 {
   grid-area: imagen8;
-  background-image: url(../imagenes/Viajes/img8.jpg);
+  background-image: url(../imagenes/Viajes/img8.JPG);
   background-position: center;
+  background-size: cover;
   margin: 5px;
 }
 
@@ -810,7 +811,7 @@ body {
   }
   .infoGaleria2 .imgGaleria1 .imagen3 {
     grid-area: img3;
-    background-image: url(../imagenes/Viajes/img4.jpg);
+    background-image: url(../imagenes/Viajes/img3.JPG);
     background-position: center;
     margin: 5px;
     background-position: center;
@@ -818,7 +819,7 @@ body {
   }
   .infoGaleria2 .imgGaleria1 .imagen4 {
     grid-area: img4;
-    background-image: url(../imagenes/Viajes/img5.jpg);
+    background-image: url(../imagenes/Viajes/img4.jpg);
     background-position: center;
     margin: 5px;
     background-position: center;
@@ -826,7 +827,7 @@ body {
   }
   .infoGaleria2 .imgGaleria1 .imagen5 {
     grid-area: img5;
-    background-image: url(../imagenes/Viajes/img6.jpg);
+    background-image: url(../imagenes/Viajes/img5.jpg);
     background-position: center;
     margin: 5px;
     background-position: center;
@@ -834,7 +835,7 @@ body {
   }
   .infoGaleria2 .imgGaleria1 .imagen6 {
     grid-area: img6;
-    background-image: url(../imagenes/Viajes/img7.jpg);
+    background-image: url(../imagenes/Viajes/img6.jpg);
     background-position: center;
     margin: 5px;
     background-position: center;
@@ -842,7 +843,7 @@ body {
   }
   .infoGaleria2 .imgGaleria1 .imagen7 {
     grid-area: img7;
-    background-image: url(../imagenes/Viajes/img8.jpg);
+    background-image: url(../imagenes/Viajes/img7.jpg);
     background-position: center;
     margin: 5px;
     background-position: center;
